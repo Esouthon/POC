@@ -1,0 +1,4 @@
+import pandas as pd
+from ma_bibliotheque import interpolate_to_hourly
+
+# The foundational setup and template code remains, but all unit test code has been removed.
