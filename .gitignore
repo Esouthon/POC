@@ -1,5 +1,5 @@
 *.log
-.env
+.venv
 .DS_Store
 # Ignorer les données brutes et intermédiaires
 Data/Data France/Data_bronse_france/
