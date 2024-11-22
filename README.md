@@ -1,21 +1,68 @@
-# POC
-This work aims to target the construction of a proof of concept (POC) of General Neutral Network Platform. As part of the European Energy project ORION, which is a project set to transform the future of renewable energy value chain through digital innovation. The generation of synthetic consumption data will be the key. 
-
-# Data description
+# Description des données
 
 ## Label
-- Consumption**: expressed in megawatts (MW).
+- **Consommation** : exprimée en mégawatts (MW).
 
 ## Features
-The following features are used: 
+Les caractéristiques utilisées sont les suivantes : 
 
-1. **Temperature** : expressed in degrees Celsius (°C).  
-2. **Humidity**: expressed in percent (%).  
-3. **Wind force**: expressed in meters per second (m/s).  
-4. **Country number**: according to ISO standard for country codes.  
-5. **Scale**: integer value between 1 and 6.  
-6. **Public holiday**: binary indicator (0 = normal day, 1 = public holiday).  
-7. **Day of week**: integer value from 1 to 7 (1 = Monday, 7 = Sunday).  
-8. **Month**: integer value from 1 to 12 (1 = January, 12 = December).  
+1. **Température** : exprimée en degrés Celsius (°C).  
+2. **Humidité** : exprimée en pourcentage (%).  
+3. **Force du vent** : exprimée en mètres par seconde (m/s).  
+4. **Numéro du pays** : selon la norme ISO des codes pays.  
+5. **Échelle** : valeur entière comprise entre 1 et 6.  
+6. **Jour férié** : indicateur binaire (0 = jour normal, 1 = jour férié).  
+7. **Jour de la semaine** : valeur entière de 1 à 7 (1 = lundi, 7 = dimanche).  
+8. **Mois** : valeur entière de 1 à 12 (1 = janvier, 12 = décembre).  
 
+---
 
+## Sources des données
+
+### 1. **Données de consommation d'électricité**
+
+Les données relatives à la consommation d'électricité par pays proviennent de :
+
+- **Source :** [Nom de la source de données](lien_vers_la_source)
+- **Fréquence :** [quotidienne, hebdomadaire, mensuelle, etc.]
+- **Période :** [dates de début et fin]
+- **Format :** [CSV, API, Base de données, etc.]
+
+**Exemple de données :**
+- [Exemple de valeur : Pays, Consommation (MW), Date]
+
+---
+
+### 2. **Données météorologiques**
+
+Les données météorologiques (température, humidité, force du vent) proviennent de :
+
+- **Source :** [Nom de la source de données](lien_vers_la_source)
+- **Fréquence :** [quotidienne, horaire, etc.]
+- **Période :** [dates de début et fin]
+- **Format :** [API, CSV, etc.]
+
+**Exemple de données :**
+- [Exemple de valeur : Pays, Température (°C), Humidité (%), Vent (m/s), Date]
+
+---
+
+### 3. **Données sur les jours fériés**
+
+Les informations sur les jours fériés sont récupérées depuis :
+
+- **Source :** [Nom de la source de données](lien_vers_la_source)
+- **Fréquence :** [annuelle, spécifique, etc.]
+- **Période :** [dates de début et fin]
+- **Format :** [API, fichier CSV, etc.]
+
+**Exemple de données :**
+- [Exemple de valeur : Pays, Jour férié (0/1), Date]
+
+---
+
+### 4. **Autres données (par exemple, code du pays, jour de la semaine, mois)**
+
+- **Code du pays** : Les codes pays sont fournis par la norme ISO 3166-1 alpha-2.
+- **Jour de la semaine** : Ces données sont extraites directement à partir des dates.
+- **Mois** : De même, les mois sont extraits à partir des dates associées aux autres données.
